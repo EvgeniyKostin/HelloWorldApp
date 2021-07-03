@@ -9,8 +9,12 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    // MARK: - IBOutlets
+    
     @IBOutlet weak var helloWorldLabel: UILabel!
     @IBOutlet weak var showTextButton: UIButton!
+    
+    // MARK: - Lifecycle
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -20,6 +24,8 @@ class ViewController: UIViewController {
         helloWorldLabel.textColor = .systemBlue
         
     }
+    
+    // MARK: - IBActions
     
     @IBAction func showTextButtonPressed() {
         helloWorldLabel.isHidden.toggle()
@@ -33,4 +39,3 @@ class ViewController: UIViewController {
     
 
 }
-
